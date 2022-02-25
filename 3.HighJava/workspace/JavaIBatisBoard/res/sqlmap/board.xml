@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMap
+			PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN"
+			"http://ibatis.apache.org/dtd/sql-map-2.dtd">
+<sqlMap namespace="board">
+<!-- 
+   이 영역에서 sql문에 맞는 태그를 사용하여 SQL문을 작성한다.
+   
+   사용할 수 있는 기본적인 태그들...
+   <select> ~~~ </select>
+   <insert> ~~~ </insert>
+   <update> ~~~ </update>
+   <delete> ~~~ </delete>
+   
+   위 태그에서 사용되는 속성들
+   1) id 속성 : 해당 태그를 호출할 때 <sqlMap>태그의 namespace와 연결하여 사용하는 이름
+   
+   2) parameterClass 속성 : sql문에 사용될 데이터가 들어있는 객체를 지정한다.
+      - 보통 VO클래스, 자바의 자료형 이름이 사용된다.
+      - typeAlias로 지정한 alias명이 사용될 수 있다.
+      
+   3) resultClass 속성 : select문을 실행한 결과를 담을 객체를 지정한다.
+      - 보통 VO클래스, 자바의 자료형 이름이 사용된다.
+      - typeAlias로 지정한 alias명이 사용될 수 있다.
+      
+   4) resultMap 속성 : 결과 레코드 컬럼명과 VO객체의 property명이 다를 경우에 적절한 매핑을 위해 사용된다.
+-->
+	<update id="writeBoard" parameterClass="boardVO">
+		INSERT INTO JDBC_BOARD
+		(BOARD_NO, BOARD_TITLE, BOARD_WRITER, BOARD_DATE, BOARD_CONTENT)
+		VALUES (BOARD_SEQ.nextVal, #boardTitle#, TRIM(#boardWriter#), SYSDATE, #boardContent#)
+	</update>
+	
+	<update id="updateBoard" parameterClass="boardVO">
+		UPDATE JDBC_BOARD
+		   SET BOARD_TITLE = #boardTitle#
+			 , BOARD_CONTENT = #boardContent#
+			 , BOARD_DATE = SYSDATE
+		 WHERE BOARD_NO = #boardNo#
+	</update>
+	
+	<delete id="deleteBoard" parameterClass="int">
+		DELETE FROM JDBC_BOARD
+		 WHERE BOARD_NO = #boardNo#
+	</delete>
+	
+	<resultMap class="boardVO" id="boardMap">
+		<result property="boardNo" column="BOARD_NO"/>
+		<result property="boardTitle" column="BOARD_TITLE"/>
+		<result property="boardWriter" column="BOARD_WRITER"/>
+		<result property="boardDate" column="BOARD_DATE"/>
+		<result property="boardContent" column="BOARD_CONTENT"/>
+	</resultMap>
+	
+	<select id="listBoard" resultMap="boardMap"><!-- select에는 resultClass가 필수이다. -->
+		SELECT *
+		  FROM JDBC_BOARD
+		 ORDER BY BOARD_NO DESC
+	</select>
+	
+	<select id="chkNumber" parameterClass="int" resultClass="int">
+		SELECT COUNT(*) AS CNT
+		  FROM JDBC_BOARD
+		 WHERE BOARD_NO = #boardNo# 
+	</select>
+	
+	<select id="readBoard" parameterClass="int" resultMap="boardMap">
+		SELECT *
+		  FROM JDBC_BOARD
+		 WHERE BOARD_NO = #boardNo#
+	</select>
+	
+	<select id="searchBoard" parameterClass="boardVO" resultMap="boardMap">
+		SELECT *
+		  FROM JDBC_BOARD
+		 WHERE 1 = 1
+		<isNotEmpty property="boardTitle">
+			AND BOARD_TITLE LIKE '%' || #boardTitle# || '%'
+		</isNotEmpty>
+		
+		<isNotEmpty property="boardContent">
+			AND BOARD_CONTENT LIKE '%' || #boardContent# || '%'
+		</isNotEmpty>
+		
+		<isNotEmpty property="boardWriter">
+		 	AND BOARD_WRITER = #boardWriter#
+		</isNotEmpty>	
+		ORDER BY BOARD_NO DESC
+	</select>
+</sqlMap>			

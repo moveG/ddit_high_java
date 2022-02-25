@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMap
+			PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN"
+			"http://ibatis.apache.org/dtd/sql-map-2.dtd">
+<sqlMap namespace="member">
+	<resultMap class="memVO" id="memMap">
+		<result property="memId" column="mem_id"/>
+		<result property="memName" column="mem_name"/>
+		<result property="memTel" column="mem_tel"/>
+		<result property="memAddr" column="mem_addr"/>
+		<result property="atchFileId" column="atch_file_id"/>
+	</resultMap>
+	
+	<insert id="insertMember" parameterClass="kr.or.ddit.member.vo.MemberVO">
+		INSERT INTO MYMEMBER
+		(MEM_ID, MEM_NAME, MEM_TEL, MEM_ADDR, ATCH_FILE_ID)
+		VALUES (#memId#, #memName#, #memTel#, #memAddr#, #atchFileId#)
+	</insert>
+	
+	<select id="chkMember" parameterClass="String" resultClass="int">
+		SELECT COUNT(*) AS cnt
+		  FROM MYMEMBER
+		 WHERE MEM_ID = #memId#
+	</select>
+	<!-- count(*)은 int를 반환함 -->
+	
+	<select id="selectMember" parameterClass="String" resultMap="memMap">
+		SELECT *
+		  FROM MYMEMBER
+		 WHERE MEM_ID = #memId#
+	</select>
+	
+	<select id="selectAllMember" resultMap="memMap">
+		SELECT AA.*
+		  FROM (SELECT ROWNUM AS rnum,
+		  			   A.*
+				  FROM (SELECT *
+				  		  FROM MYMEMBER) A) AA
+		 WHERE AA.rnum BETWEEN #firstRecNo# AND #lastRecNo#
+	</select>
+	
+	<select id="selectTotalCnt" resultClass="int">
+		SELECT COUNT(*)
+		  FROM MYMEMBER
+	</select>
+	
+	<update id="updateMember" parameterClass="memVO">
+		UPDATE MYMEMBER
+		   SET MEM_NAME = #memName#
+		      ,MEM_TEL = #memTel#
+		      ,MEM_ADDR = #memAddr#
+		      ,ATCH_FILE_ID = #atchFileId#
+		 WHERE MEM_ID = #memId#
+	</update>
+	
+	<delete id="deleteMember" parameterClass="String">
+		DELETE FROM MYMEMBER WHERE MEM_ID = #memId#
+	</delete>
+	
+	<select id="searchMember" parameterClass="memVO" resultMap="memMap">
+		SELECT *
+		  FROM MYMEMBER
+		 WHERE 1=1
+		 <!-- property인 memId가 empty가 아니면 내부의 쿼리를 실행, empty이면 내부의 쿼리를 스킵  -->
+		<isNotEmpty property="memId">
+		 	AND MEM_ID = #memId#
+		</isNotEmpty>
+		<isNotEmpty property="memName">
+		 	AND MEM_NAME = #memName#
+		</isNotEmpty>
+		<isNotEmpty property="memTel">
+		 	AND MEM_TEL = #memTel#
+		</isNotEmpty>		
+		<isNotEmpty property="memAddr">
+		 	AND MEM_ADDR LIKE '%' || #memAddr# || '%'
+		</isNotEmpty>
+	</select>	
+</sqlMap>			

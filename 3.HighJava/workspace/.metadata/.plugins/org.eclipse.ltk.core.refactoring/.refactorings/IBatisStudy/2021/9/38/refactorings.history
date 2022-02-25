@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring accessors="true" comment="Delete 3 elements from project &apos;IBatisStudy&apos;&#x0D;&#x0A;- Original project: &apos;IBatisStudy&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     kr.or.ddit.util.JDBCUtil.java&#x0D;&#x0A;     kr.or.ddit.util.JDBCUtil2.java&#x0D;&#x0A;     kr.or.ddit.util.JDBCUtil3.java" description="Delete elements" element1="/src&lt;kr.or.ddit.util{JDBCUtil2.java" element2="/src&lt;kr.or.ddit.util{JDBCUtil3.java" element3="/src&lt;kr.or.ddit.util{JDBCUtil.java" elements="3" flags="589830" id="org.eclipse.jdt.ui.delete" resources="0" stamp="1631533074921" subPackages="false" version="1.0"/>
+</session>

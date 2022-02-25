@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMap
+			PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN"
+			"http://ibatis.apache.org/dtd/sql-map-2.dtd">
+<sqlMap namespace="memberTest">
+<!-- 
+   이 영역에서 sql문에 맞는 태그를 사용하여 SQL문을 작성한다.
+   
+   사용할 수 있는 기본적인 태그들...
+   <select> ~~~ </select>
+   <insert> ~~~ </insert>
+   <update> ~~~ </update>
+   <delete> ~~~ </delete>
+   
+   위 태그에서 사용되는 속성들
+   1) id 속성 : 해당 태그를 호출할 때 <sqlMap>태그의 namespace와 연결하여 사용하는 이름
+   
+   2) parameterClass 속성 : sql문에 사용될 데이터가 들어있는 객체를 지정한다.
+      - 보통 VO클래스, 자바의 자료형 이름이 사용된다.
+      - typeAlias로 지정한 alias명이 사용될 수 있다.
+      
+   3) resultClass 속성 : select문을 실행한 결과를 담을 객체를 지정한다.
+      - 보통 VO클래스, 자바의 자료형 이름이 사용된다.
+      - typeAlias로 지정한 alias명이 사용될 수 있다.
+      
+   4) resultMap 속성 : 결과 레코드 컬럼명과 VO객체의 property명이 다를 경우에 적절한 매핑을 위해 사용된다.
+-->
+	<insert id="insertMember" parameterClass="kr.or.ddit.member.vo.MemberVO">
+		insert into mymember
+		(mem_id, mem_name, mem_tel, mem_addr)
+		values (#memId#, #memName#, #memTel#, #memAddr#)
+	</insert>
+	
+	<update id="updateMember" parameterClass="memVO"><!-- parameterClass가 길어서 alias를 넣음 -->
+		update mymember
+		set mem_name = #memName#
+		   ,mem_tel = #memTel#
+		   ,mem_addr = #memAddr#
+		where mem_id = #memId#
+	</update>
+	
+	<delete id="deleteMember"><!-- parameterClass는 생략이 가능함 -->
+		delete from mymember where mem_id = #memId#
+		<!-- delete from mymember where mem_id = #aaa# -->
+		<!-- 객체가 아닌 String파라미터 하나만 넘어오면 이름은 상관이 없다.-->
+	</delete>
+	
+	<select id="selectAllMember" resultClass="memVO"><!-- select에는 resultClass가 필수이다. -->
+		select mem_id as memId
+			  ,mem_name as memName
+			  ,mem_tel as memTel
+			  ,mem_addr as memAddr
+		  from mymember
+	</select>
+	
+	<!-- <select id="getMember" parameterClass="String" resultClass="memVO">
+		select mem_id as memId
+			  ,mem_name as memName
+			  ,mem_tel as memTel
+			  ,mem_addr as memAddr
+		  from mymember
+		 where mem_id = #memId# 
+	</select> -->
+	
+	<resultMap class="memVO" id="mMap">
+		<result property="memId" column="mem_id"/>
+		<result property="memName" column="mem_name"/>
+		<result property="memTel" column="mem_tel"/>
+		<result property="memAddr" column="mem_addr"/>
+	</resultMap>
+	
+	<select id="getMember" parameterClass="String" resultMap="mMap">
+		select mem_id
+			  ,mem_name
+			  ,mem_tel
+			  ,mem_addr
+		  from mymember
+		 where mem_id = #memId# 
+	</select>
+</sqlMap>			

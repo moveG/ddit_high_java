@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMap
+			PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN"
+			"http://ibatis.apache.org/dtd/sql-map-2.dtd">
+<sqlMap namespace="boardStudy">
+	<update id="insertBoard" parameterClass="boardVO">
+		INSERT INTO BOARD
+		VALUES(SEQ_BOARD.NEXTVAL,
+			   #board_title#,
+			   #board_content#,
+			   #board_writer#,
+			   #board_password#,
+			   SYSDATE,
+			   0)
+	</update>
+	
+	<update id="updateBoard" parameterClass="boardVO">
+		UPDATE BOARD
+		   SET BOARD_TITLE = #board_title#,
+			   BOARD_CONTENT = #board_content#,
+			   BOARD_DATE = SYSDATE
+		 WHERE BOARD_NO = #board_no#
+		   AND BOARD_PASSWORD = #board_password#
+	</update>
+	
+	<update id="updateHit" parameterClass="int">
+		UPDATE BOARD
+		   SET BOARD_HIT = BOARD_HIT + 1
+		 WHERE BOARD_NO = #board_no#
+	</update>
+		
+	<delete id="deleteBoard" parameterClass="int">
+		DELETE BOARD
+		 WHERE BOARD_NO = #board_no#
+	</delete>
+	
+	<select id="countBoard" resultClass="int">
+		SELECT COUNT(*)
+		  FROM BOARD
+	</select>
+	
+	<select id="listBoard" resultClass="boardVO">
+		SELECT *
+		  FROM BOARD
+		 ORDER BY BOARD_NO DESC
+	</select>
+	
+	<select id="detailBoard" parameterClass="int" resultClass="boardVO">
+		SELECT *
+		  FROM BOARD
+		 WHERE BOARD_NO = #board_no#
+	</select>
+</sqlMap>

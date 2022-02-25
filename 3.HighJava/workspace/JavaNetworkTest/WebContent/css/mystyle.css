@@ -1,0 +1,464 @@
+#indexbody{
+	margin : 0px;
+	padding : 0px;
+	width : 1920px;
+	overflow : auto;
+}
+header{
+	height : 110px;
+}
+#indexhead{
+	display : inline-block;
+	font-size : 2.2em;
+	padding-top : 25px;
+	margin-left : 160px;
+}
+#headlink:link, #headlink:visited, #headlink:hover{
+	color : rgb(56, 111, 229);
+	text-decoration : none;
+}
+nav{
+	height : 35px;
+	border-top : 1px solid rgb(56, 111, 229);
+	border-bottom : 1px solid rgb(56, 111, 229);
+	padding-left : 570px;
+	padding-top : 10px;
+	
+}
+#left, #right, section{
+	height : 720px;
+}
+#left{
+	width : 180px;
+	float : left;
+	margin-left : 350px;
+	background : rgb(56, 111, 229);
+	line-height : 40px;
+	color : white;
+	padding-left : 25px;
+}
+#right{
+	width : 155px;
+	float : left;
+	margin-left : 30px;
+	background : rgb(240, 240, 240);
+	padding-left : 20px;
+}
+section{
+	width : 775px;
+	float : left;
+	margin-left : 30px;
+	border-left : 1px solid rgb(56, 111, 229);
+	border-right : 1px solid rgb(56, 111, 229);
+}
+footer{
+	height : 60px;
+	clear : both;
+	color : gray;
+	text-align : center;
+	padding-top : 15px;
+	border-top : 1px solid rgb(56, 111, 229);
+}
+#indeximg{
+	margin-left : 350px;
+	float : left;
+}
+#indexul{	
+	list-style-type : none;
+	margin : auto;
+}
+#indexli{
+	float : left;
+	letter-spacing : 2px;
+	margin-right : 50px;
+	font-weight : bold;
+}
+#indexid{
+	width : 120px;
+}
+#indexp1{
+	font-size : 0.9em;
+	line-height : 2px;
+}
+#indexp2{
+	font-size : 0.9em;
+	line-height : 5px;
+}
+iframe{
+	width : 100%;
+	height : 720px;
+	border : 0;
+}
+#indexa1:link, #indexa1:visited, #indexa1:hover{
+	color : black;
+	text-decoration : none;
+}
+#indexa2:link, #indexa2:visited, #indexa2:hover{
+	color : white;
+	text-decoration : none;
+}
+#indexa4:link, #indexa4:visited, #indexa4:hover{
+	color : black;
+	text-decoration : none;
+}
+
+
+
+
+
+#computerbody{
+	margin : 0px;
+	height : 100%;
+	width : 98%;
+	padding : 0px auto;
+	margin : 10px auto;
+	display: flex;
+}
+#computerdiv{
+	width : 48%;
+	border : 1px solid rgb(56, 111, 229);
+	margin : 5px;
+	word-break : break-all;
+	height : 620px;
+	padding : 30px;
+}
+#computerbutton{
+	position : absolute;
+	bottom : 30px;
+}
+#computerimg{
+	width : 90%;
+}
+#computerp1, #computerp2{
+	border-bottom : 1px solid rgb(56, 111, 229);
+}
+#computerp1{
+	text-align : center;
+}
+#computerp2{
+	line-height : 200%;
+	height : 360px;
+	overflow : hidden;
+}
+
+
+
+
+
+#clothbody{
+	margin : 0px;
+	height : 100%;
+	width : 98%;
+	padding : 0px auto;
+	margin : 10px auto;
+	display: flex;
+}
+#clothdiv{
+	width : 48%;
+	border : 1px solid rgb(56, 111, 229);
+	margin : 5px;
+	word-break : break-all;
+	height : 620px;
+	padding : 30px;
+	
+}
+#clothbutton{
+	position : absolute;
+	bottom : 30px;
+}
+#clothimg{
+	width : 90%;
+}
+#clothp1, #clothp2{
+	border-bottom : 1px solid rgb(56, 111, 229);
+}
+#clothp1{
+	text-align : center;
+}
+#clothp2{
+	line-height : 200%;
+}
+
+
+
+
+
+#sportsbody{
+	margin : 0px;
+	height : 100%;
+	width : 98%;
+	padding : 0px auto;
+	margin : 10px auto;
+	display: flex;
+}
+#sportsdiv{
+	width : 48%;
+	border : 1px solid rgb(56, 111, 229);
+	margin : 5px;
+	word-break : break-all;
+	height : 620px;
+	padding : 30px;
+}
+#sportsbutton{
+	position : absolute;
+	bottom : 30px;
+}
+#sportsimg{
+	width : 90%;
+}
+#sportsp1, #sportdiv2{
+	border-bottom : 1px solid rgb(56, 111, 229);
+}
+#sportsp1{
+	text-align : center;
+}
+#sportdiv2{
+	line-height : 180%;
+	height : 360px;
+	overflow : hidden;
+}
+#sportsp2{
+	margin : 0px;
+	padding : 0px;
+	font-weight : bold;
+}
+
+
+
+
+
+#furniturebody{
+	margin : 0px;
+	height : 100%;
+	width : 98%;
+	padding : 0px auto;
+	margin : 10px auto;
+	display: flex;
+}
+#furniturediv{
+	width : 48%;
+	border : 1px solid rgb(56, 111, 229);
+	margin : 5px;
+	word-break : break-all;
+	height : 620px;
+	padding : 30px;
+}
+#furniturebutton{
+	bottom : 30px;
+}
+#furnitureimg{
+	width : 90%;
+}
+#furniturep1, #furniturep2{
+	border-bottom : 1px solid rgb(56, 111, 229);
+}
+#furniturep1{
+	text-align : center;
+}
+#furniturep2{
+	line-height : 200%;
+	height : 50px;
+	overflow : hidden;
+}
+
+
+
+
+
+#foodbody{
+	margin : 0px;
+	height : 100%;
+	width : 98%;
+	padding : 0px auto;
+	margin : 10px auto;
+	display: flex;
+}
+#fooddiv{
+	width : 48%;
+	border : 1px solid rgb(56, 111, 229);
+	margin : 5px;
+	word-break : break-all;
+	height : 620px;
+	padding : 30px;
+}
+#foodbutton{
+	bottom : 30px;
+}
+#foodimg{
+	width : 90%;
+}
+#foodp1, #foodp2{
+	border-bottom : 1px solid rgb(56, 111, 229);
+}
+#foodp1{
+	text-align : center;
+}
+#foodp2{
+	line-height : 200%;
+	height : 50px;
+	overflow : hidden;
+}
+
+
+
+
+
+#musicbody{
+	margin : 0px;
+	height : 100%;
+	width : 98%;
+	padding : 0px auto;
+	margin : 10px auto;
+	display: flex;
+}
+#musicdiv{
+	width : 48%;
+	border : 1px solid rgb(56, 111, 229);
+	margin : 5px;
+	word-break : break-all;
+	height : 620px;
+	padding : 30px;
+}
+#musicbutton{
+	bottom : 30px;
+}
+#musicimg{
+	width : 90%;
+}
+#musicp1, #musicp2, #musicp3{
+	border-bottom : 1px solid rgb(56, 111, 229);
+}
+#musicp1{
+	text-align : center;
+}
+#musicp2{
+	line-height : 200%;
+	height : 100px;
+	overflow : hidden;
+	border-bottom : none;
+}
+#musicp3{
+	text-align : center;
+	height : 70px;
+	overflow : hidden;
+	
+}
+audio {
+	width : 90%;
+}
+
+
+
+
+
+#moviebody{
+	margin : 0px;
+	height : 100%;
+	width : 98%;
+	padding : 0px auto;
+	padding-top : 5px;
+	margin : auto;
+	text-align : center;
+}
+video {
+	width : 98%;
+	height : 300px;
+	object-fit : fill;
+}
+#moviediv1, #moviediv2{
+	width : 46%;
+	height : 380px;
+	border : 1px solid rgb(56, 111, 229);
+	margin-top : 10px;
+	padding : 5px;
+	text-align : center;
+}
+#moviediv1{
+	float : left;
+}
+#moviediv2{
+	float : right;
+}
+#movieimg{
+	height : 98%;
+}
+#moviep1{
+	overflow : hidden;
+	padding : 0px;
+	margin : 0px;
+	height : 320px;
+}
+#moviebutton{
+	height : 40px;
+	padding : auto;
+	text-align : center;
+}
+
+
+
+
+
+#cartbody{
+	margin : 0px;
+	padding : 20px;
+	width : 620px;
+	background : rgb(240, 240, 240);
+}
+#carttable{
+	border : 2px solid black;
+	border-collapse : collapse;
+	text-align : center;
+}
+caption{
+	line-height : 200%;
+	font-size : 1.2em;
+}
+.cartclass1, .cartclass2{
+	width : 150px;
+	height : 30px;
+}
+.cartclass3{
+	width : 200px;
+}
+.cartclass4{
+	width : 70px;
+}
+.num1{
+	width : 190px;
+}
+.num2{
+	width : 100px;
+}
+
+
+
+
+
+#registerbody{
+	background : rgb(240, 240, 240);
+	overflow : auto;
+	width : 580px;
+}
+#registerlabel{
+	display : inline-block;
+	width : 120px;
+	height : 30px;
+}
+#registerform{
+	margin : 10px;
+	padding : 10px;
+	width : 90%;
+}
+#doublebutton{
+	margin-left : 10px;
+}
+#registerinfo{
+	width : 200px;
+}
+#registerbutton{
+	width : 100px;
+	margin-top : 10px;
+}
+#genderbutton{
+	margin-right : 20px;
+}

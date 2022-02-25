@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="WorkbenchPreferenceDialogSettings">
+		<item value="426" key="DIALOG_X_ORIGIN"/>
+		<item value="79" key="DIALOG_Y_ORIGIN"/>
+	</section>
+	<section name="org.eclipse.ui.internal.QuickAccess">
+		<item value="-1" key="dialogHeight"/>
+		<item value="-1" key="dialogWidth"/>
+		<list key="textEntries">
+		</list>
+		<list key="orderedElements">
+		</list>
+		<list key="orderedProviders">
+		</list>
+		<list key="textArray">
+		</list>
+	</section>
+	<section name="NewWizardAction">
+		<item value="org.eclipse.jst.jsp.ui.internal.wizard.NewJSPWizard" key="NewWizardSelectionPage.STORE_SELECTED_ID"/>
+		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
+			<item value="org.eclipse.wst.web.ui"/>
+		</list>
+	</section>
+	<section name="FileSystemExportWizard">
+		<item value="false" key="WizardFileSystemResourceExportPage1.STORE_OVERWRITE_EXISTING_FILES_ID"/>
+		<item value="false" key="WizardFileSystemResourceExportPage1.STORE_RESOLVE_LINKED_RESOURCES_ID"/>
+		<item value="false" key="WizardFileSystemResourceExportPage1.STORE_CREATE_STRUCTURE_ID"/>
+		<list key="WizardFileSystemResourceExportPage1.STORE_DESTINATION_NAMES_ID">
+			<item value="C:\Users\PC-15\Desktop\"/>
+			<item value="C:\Users\PC-15\Desktop\이동근.zip"/>
+			<item value="C:\Users\PC-15\Desktop"/>
+		</list>
+	</section>
+	<section name="InstallationDialogSettings">
+		<item value="706" key="DIALOG_WIDTH"/>
+		<item value="1|맑은 고딕|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|맑은 고딕" key="DIALOG_FONT_NAME"/>
+		<item value="744" key="DIALOG_HEIGHT"/>
+		<item value="108" key="DIALOG_X_ORIGIN"/>
+		<item value="-298" key="DIALOG_Y_ORIGIN"/>
+	</section>
+	<section name="ImportExportAction">
+		<item value="org.eclipse.ui.wizards.export.ZipFile" key="ImportExportPage.STORE_SELECTED_EXPORT_WIZARD_ID"/>
+		<list key="ImportExportPage.STORE_EXPANDED_EXPORT_CATEGORIES">
+			<item value="org.eclipse.ui.Basic"/>
+			<item value="org.eclipse.jdt.ui.Java"/>
+		</list>
+	</section>
+	<section name="ZipFileExportWizard">
+		<item value="true" key="WizardZipFileResourceExportPage1.STORE_COMPRESS_CONTENTS_ID"/>
+		<item value="true" key="WizardZipFileResourceExportPage1.STORE_CREATE_STRUCTURE_ID"/>
+		<list key="WizardZipFileResourceExportPage1.STORE_DESTINATION_NAMES_ID">
+			<item value="C:\Users\PC-15\Desktop\회원관리 게시판.zip"/>
+			<item value="C:\Users\PC-15\Desktop\게시판.....완성.zip"/>
+			<item value="C:\Users\PC-15\Desktop\게시판완성.zip"/>
+			<item value="C:\Users\PC-15\Desktop\게시판3.zip"/>
+			<item value="C:\Users\PC-15\Desktop\게시판1.zip"/>
+			<item value="C:\Users\PC-15\Desktop\이동근_1027(회원리스트 게시판).zip"/>
+			<item value="C:\Users\PC-15\Desktop\이동근_0915.zip"/>
+			<item value="C:\Users\PC-15\Desktop\이동근_0913.zip"/>
+			<item value="C:\Users\PC-15\Desktop\이동근_0910.zip"/>
+			<item value="C:\Users\PC-15\Desktop\이동근_0909.zip"/>
+			<item value="C:\Users\PC-15\Desktop\이동근_0908.zip"/>
+			<item value="C:\Users\PC-15\Desktop\이동근_0823.zip"/>
+			<item value="C:\Users\PC-15\Desktop\homework1.zip"/>
+		</list>
+	</section>
+</section>

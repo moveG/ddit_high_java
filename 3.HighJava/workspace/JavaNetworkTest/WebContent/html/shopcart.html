@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset = "UTF-8">
+		<title>쇼핑카트</title>
+		<link rel ="stylesheet" href = "../css/mystyle.css">
+	</head>
+	<body id = "cartbody">
+		<div id = "cartdiv1">
+			<form id = "cartform">
+				<table id = "carttable" border = "1">
+					<caption>
+					<a href = "./shopcart.html" target = "_self">Shopping Cart</a>
+					</caption>
+					<tr>
+						<th>품목</th>
+						<th>가격</th>
+						<th>수량</th>
+						<th>합계</th>
+					</tr>
+					<tr>
+						<td class = "cartclass1">컴퓨터세트</td>
+						<td class = "cartclass2">2,000,000원</td>
+						<td class = "cartclass3"><input class = "num1" type="number" name="number" min="1" max="20" step="1"></td>
+						<td class = "cartclass4"><input class = "num2" type = "text" value = "0"></td>
+					</tr>
+					<tr>
+						<td class = "cartclass1">티셔츠</td>
+						<td class = "cartclass2">50,000원</td>
+						<td class = "cartclass3"><input class = "num1" type="number" name="number" min="1" max="20" step="1"></td>
+						<td class = "cartclass4"><input class = "num2" type = "text" value = "0"></td>
+					</tr>
+					<tr>
+						<td class = "cartclass1">음악파일</td>
+						<td class = "cartclass2">1,000원</td>
+						<td class = "cartclass3"><input class = "num1" type="number" name="number" min="1" max="20" step="1"></td>
+						<td class = "cartclass4"><input class = "num2" type = "text" value = "0"></td>
+					</tr>
+					<tr>
+						<td class = "cartclass1">영화파일</td>
+						<td class = "cartclass2">5,000원</td>
+						<td class = "cartclass3"><input class = "num1" type="number" name="number" min="1" max="20" step="1"></td>
+						<td class = "cartclass4"><input class = "num2" type = "text" value = "0"></td>
+					</tr>
+				</table>			
+				<br>
+				<button id = "cartbutton">계산</button>
+				<button id = "cartbutton">구매</button>
+				<button id = "cartbutton" type = "reset">초기화</button>
+			</form>
+		</div>
+		<div id = "cartdiv2">
+			<br><a id = "carttohome" href = "./computer.html" target = "_self">홈으로</a>
+		</div>
+	</body>
+</html>
+

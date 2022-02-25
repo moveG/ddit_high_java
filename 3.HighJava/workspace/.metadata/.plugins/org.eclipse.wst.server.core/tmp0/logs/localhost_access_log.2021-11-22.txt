@@ -1,0 +1,4 @@
+127.0.0.1 - - [22/Nov/2021:16:21:37 +0900] "GET / HTTP/1.1" 404 1074
+0:0:0:0:0:0:0:1 - - [22/Nov/2021:16:21:45 +0900] "GET /ServletMemberBoard/MemberList.do HTTP/1.1" 200 6571
+0:0:0:0:0:0:0:1 - - [22/Nov/2021:16:22:25 +0900] "GET /ServletMemberBoard/MemberList.do HTTP/1.1" 200 6571
+0:0:0:0:0:0:0:1 - - [22/Nov/2021:16:22:30 +0900] "GET /ServletMemberBoard/MemberList.do HTTP/1.1" 200 4204

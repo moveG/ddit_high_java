@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete 3 resources" deleteContents="false" description="Delete 3 resources" element1="/Servers/ibatis-2.3.4.726.jar" element2="/Servers/log4j-1.2.17.jar" element3="/Servers/ojdbc6.jar" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="3" stamp="1633143293039"/>
+</session>

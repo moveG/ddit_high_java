@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy package &apos;kr.or.ddit.member.vo&apos; to &apos;IBatisTest/src&apos;&#x0D;&#x0A;- Original project: &apos;JavaSingletonTest&apos;&#x0D;&#x0A;- Destination element: &apos;IBatisTest/src&apos;&#x0D;&#x0A;- Original element: &apos;JavaSingletonTest/src/kr.or.ddit.member.vo&apos;" description="Copy package" destination="=IBatisTest/src" element1="/src&lt;kr.or.ddit.member.vo" flags="589830" fragments="1" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1631240267422" version="1.0"/>
+</session>

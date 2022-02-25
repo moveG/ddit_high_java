@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset = "UTF-8">
+		<title>회원가입</title>
+		<link rel ="stylesheet" href = "../css/mystyle.css">
+	</head>
+	<body id = "registerbody">
+		<form id = "registerform">
+			<fieldset>
+				<legend>회원정보입력</legend>
+				<label id = "registerlabel">아이디</label><input id = "registerinfo" autofocus required type = "text" name = "id"><button id = "doublebutton">중복검사</button><br>
+				<label id = "registerlabel">패스워드</label><input id = "registerinfo" required type = "password" name = "pw"><br>
+				<label id = "registerlabel">패스워드 확인</label><input id = "registerinfo" required type = "password" name = "repw"><br>
+				<label id = "registerlabel">이름</label><input id = "registerinfo" required type = "text" name = "name"><br>
+				<label id = "registerlabel">휴대폰 번호</label><input id = "registerinfo" required type = "text" name = "tel" placeholder = "010-1234-5678" pattern = "\d{3}-[0-9]{3,4}-\d{4}"><br>
+				<label id = "registerlabel">이메일</label><input id = "registerinfo" type = "text" name="email" placeholder = "buybuybuy@danawa.com"><br>
+				<label id = "registerlabel">생일</label><input id = "registerinfo" type = "date" name = "birth"><br>
+				<label id = "registerlabel">홈페이지</label><input id = "registerinfo" type = "url" name = "url"><br>
+				
+				<label id = "registerlabel">성별</label><input id = "genderbutton" type = "radio" value = "남자" name = "gender">남성<br>
+				<label id = "registerlabel"></label><input id = "genderbutton" type = "radio" value = "여자" name = "gender">여성<br>
+			</fieldset>
+			<button id = "registerbutton">제출</button>
+			<button id = "registerbutton" type = "reset">초기화</button>
+			<br><br><a id = "carttohome" href = "./computer.html" target = "_self">홈으로</a>
+		</form>
+	</body>
+</html>
+

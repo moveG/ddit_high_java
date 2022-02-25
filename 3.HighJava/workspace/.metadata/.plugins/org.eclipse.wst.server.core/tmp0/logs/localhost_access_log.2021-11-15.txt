@@ -1,0 +1,7 @@
+127.0.0.1 - - [15/Nov/2021:14:21:13 +0900] "GET / HTTP/1.1" 404 1074
+0:0:0:0:0:0:0:1 - - [15/Nov/2021:14:21:21 +0900] "GET /ServletMemberBoard/MemberList.do HTTP/1.1" 200 5279
+0:0:0:0:0:0:0:1 - - [15/Nov/2021:14:21:21 +0900] "GET /favicon.ico HTTP/1.1" 404 1085
+0:0:0:0:0:0:0:1 - - [15/Nov/2021:14:21:27 +0900] "GET /ServletMemberBoard/MemberList.do HTTP/1.1" 200 5279
+0:0:0:0:0:0:0:1 - - [15/Nov/2021:14:21:29 +0900] "GET /ServletMemberBoard/MemberDetail.do?id=lala HTTP/1.1" 200 3304
+0:0:0:0:0:0:0:1 - - [15/Nov/2021:14:21:29 +0900] "GET /ServletMemberBoard/picture/5259b0a30f3940309fd5bfc52c2776cc.jpg HTTP/1.1" 404 1145
+0:0:0:0:0:0:0:1 - - [15/Nov/2021:14:21:31 +0900] "GET /ServletMemberBoard/MemberList.do HTTP/1.1" 200 5279

@@ -1,0 +1,13 @@
+
+10월 29, 2021 20:55:59.46 NEW SESSION
+10월 29, 2021 20:55:59.46 [11184:12776:1029/205559.462:ERROR:chrome_browser_main_extra_parts_metrics.cc(230)] crbug.com/1216328: Checking Bluetooth availability started. Please report if there is no report that this ends.
+10월 29, 2021 20:55:59.46 [11184:12776:1029/205559.462:ERROR:chrome_browser_main_extra_parts_metrics.cc(233)] crbug.com/1216328: Checking Bluetooth availability ended.
+10월 29, 2021 20:55:59.46 [11184:12776:1029/205559.462:ERROR:chrome_browser_main_extra_parts_metrics.cc(236)] crbug.com/1216328: Checking default browser status started. Please report if there is no report that this ends.
+10월 29, 2021 20:55:59.46 [11184:12776:1029/205559.462:ERROR:chrome_browser_main_extra_parts_metrics.cc(240)] crbug.com/1216328: Checking default browser status ended.
+10월 29, 2021 20:55:59.46 [11184:2276:1029/205559.462:ERROR:device_event_log_impl.cc(214)] [20:55:59.476] Bluetooth: bluetooth_adapter_winrt.cc:1073 Getting Default Adapter failed.
+10월 29, 2021 21:21:48.32 [1712:6368:1029/212148.326:ERROR:chrome_browser_main_extra_parts_metrics.cc(230)] crbug.com/1216328: Checking Bluetooth availability started. Please report if there is no report that this ends.
+10월 29, 2021 21:21:48.32 [1712:6368:1029/212148.326:ERROR:chrome_browser_main_extra_parts_metrics.cc(233)] crbug.com/1216328: Checking Bluetooth availability ended.
+10월 29, 2021 21:21:48.32 [1712:6368:1029/212148.326:ERROR:chrome_browser_main_extra_parts_metrics.cc(236)] crbug.com/1216328: Checking default browser status started. Please report if there is no report that this ends.
+10월 29, 2021 21:21:48.32 [1712:6368:1029/212148.326:ERROR:chrome_browser_main_extra_parts_metrics.cc(240)] crbug.com/1216328: Checking default browser status ended.
+10월 29, 2021 21:21:48.34 [1712:11696:1029/212148.342:ERROR:device_event_log_impl.cc(214)] [21:21:48.343] Bluetooth: bluetooth_adapter_winrt.cc:1073 Getting Default Adapter failed.
+10월 29, 2021 21:24:18.66 [1712:11696:1029/212418.663:ERROR:sharing_service.cc(252)] Device un-registration failed with fatal error

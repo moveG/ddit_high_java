@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;Study.S0827_01&apos; to &apos;S0828_01&apos;&#x0D;&#x0A;- Original project: &apos;AnnotationTest&apos;&#x0D;&#x0A;- Original element: &apos;Study.S0827_01&apos;&#x0D;&#x0A;- Renamed element: &apos;Study.S0828_01&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;S0827_01&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;Study{S0827_01.java[S0827_01" matchStrategy="1" name="S0828_01" qualified="false" references="true" similarDeclarations="false" stamp="1630113180837" textual="false" version="1.0"/>
+</session>
